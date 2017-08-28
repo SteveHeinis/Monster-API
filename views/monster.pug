@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div.info-monster
+    h2 Informations sur le monstre
+    p 
+      span Nom :
+      |  #{monster.name}
+    p
+      span Niveau :
+      |  #{monster.level}
+    p
+      span Description :
+      |  #{monster.description}

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h2 Créez un monstre
+	form(action="/create_monster", method="post")
+		input(type="text", name="name", placeholder="Nom")
+		br
+		input(type="text", name="level", placeholder="Niveau")
+		br
+		input(type="text", name="description", placeholder="Description")
+		br
+		input(class="btn" type="submit", value="Créer")

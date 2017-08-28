@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h2 Nos monstres
+  for monster,i in monsters
+    li.monsters-list
+      a.monsters-link(href="/monster/"+monster.id)= monster.name
